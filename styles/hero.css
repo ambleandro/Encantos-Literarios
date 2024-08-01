@@ -1,31 +1,18 @@
+hero {
+  position: relative;
+}
+
 hero > div{
   max-width: 90rem;
   height: 59.25rem;
   margin-inline: auto;
   overflow: hidden;
   background: url(../assets/images/hero-background.png) no-repeat center/cover;
-
-  & nav {
-    max-width: 70rem;
-    margin-top: 3.5rem;
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    & button {
-      appearance: none;
-      border: none;
-      padding: .75rem 1.25rem;
-      border-radius: .5rem;
-      background: var(--pink-dark);
-      font: var(--button);
-      color: var(--text-title);
-    }
-  }
+  opacity: 0;
+  animation: fadeIn 3s 300ms forwards;
 
   & .hero-text {
-    margin-top: 10.25rem;
+    margin-top: 17.375rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,5 +29,36 @@ hero > div{
       font: var(--body-lg);
       color: var(--text-body);
     }
+  }
+}
+
+& nav {
+  width:70rem;
+  top: 3.5rem;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  z-index: 1;
+  
+  & button {
+    appearance: none;
+    border: none;
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    background: var(--pink-dark);
+    font: var(--button);
+    color: var(--text-title);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
