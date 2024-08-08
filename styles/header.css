@@ -1,0 +1,237 @@
+header {
+  position: relative;
+}
+
+header > div {
+  max-width: 375px;
+  height: 464px;
+  margin-inline: auto;
+  overflow: hidden;
+  background: url(../assets/images/hero-background.png) no-repeat center/cover;
+  opacity: 0;
+  animation: fadeIn 3s 300ms forwards;
+
+  & .header-text {
+    margin-top: 7.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    
+    & h1 {
+      width: 335px;
+      font: 700 1.75rem/1 var(--ff-base);
+    }
+
+    & p {
+      width: 335px;
+      font: var(--body-sm);
+      color: var(--text-body);
+    }
+  }
+}
+
+& nav {
+  width:335px;
+  top: 1.25rem;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  z-index: 1;
+  
+  & img {
+    height: 48px;
+  }
+
+  & .button {
+    position: relative;
+    border: 0;
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    background: var(--pink-dark);
+    font: var(--button);
+    color: var(--text-title);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  & .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pink-base);
+    clip-path: circle(0%);
+    z-index: 0;
+    transition: 600ms;
+    }
+
+    & .button:hover::after {
+      clip-path: circle(100%);
+    }
+
+    & .button-text {
+      position: relative;
+      z-index: 1;
+    }
+}
+
+& section.description {
+  max-width: 375px;
+  height: 251px;
+  margin-top: 2rem;
+  position: relative;
+  margin-inline: auto;
+
+  & > div {
+    width: 335px;
+    text-align: center;
+
+    & .text {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 335px;
+      position: absolute;
+      margin-top: 5rem;
+    }
+  }
+
+  & img[src*=spellbook] {
+    position: absolute;
+    top: 1.75rem;
+    left: 15.75rem;
+    width: 2.5rem;
+    transform: rotate(15deg);
+  }
+
+  & img[src*=planchette] {
+    position: absolute;
+    top: 9.8125rem;
+    left: .875rem;
+    width: 2.5rem;
+    transform: rotate(-30deg);
+  }
+
+  & img[src*=crystal-ball] {
+    position: absolute;
+    top: 10.625rem;
+    left: 19.125rem;
+    width: 2.5rem;
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {width:0;}
+  to {width: 5.5rem;}
+}
+
+@media (width >= 90em) {
+  header > div {
+    max-width: 1440px;
+    height: 948px;
+
+    & .header-text {
+      margin-top: 17.375rem;
+      gap: 2rem;
+      
+      & h1 {
+        width: 656px;
+        font: 700 3rem/1 var(--ff-base);
+      }
+  
+      & p {
+        width: 568px;
+        font: var(--body-lg);
+        color: var(--text-body);
+      }
+    }
+  }
+
+  header nav {
+    width: 1120px;
+
+    & img {
+      height: 58px;
+    }
+
+    img[src*=logo-symbol] {
+      display: none;
+    }
+  }
+
+  & section.description {
+    margin-top: 6rem;
+    max-width: 75rem;
+    height: 25rem;
+
+    & > div {
+      width: 71rem;
+
+      & .text {
+        display: none;
+      }
+  
+      & .text2 {
+        position: absolute;
+        font: 400 1.85rem/2 var(--ff-base);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 71rem;
+        margin-top: 7.125rem;
+
+        & span {
+          opacity: .5;
+        }
+      }
+    }
+
+    & img[src*=spellbook] {
+      position: absolute;
+      top: .5rem;
+      left: 33rem;
+      width: 0;
+      transform: rotate(21deg);
+      animation: appear linear both;
+      animation-timeline: view();
+      animation-range: 100px 350px;
+    }
+  
+    & img[src*=planchette] {
+      position: absolute;
+      top: 14.75rem;
+      left: 2.125rem;
+      width: 5.5rem;
+      transform: rotate(99.5deg);
+      animation: appear linear both;
+      animation-timeline: view();
+      animation-range: 25px 200px;
+    }
+  
+    & img[src*=crystal-ball] {
+      position: absolute;
+      top: 14.75rem;
+      left: 69.625rem;
+      width: 5.5rem;
+      transform: rotate(-14.5deg);
+      animation: appear linear both;
+      animation-timeline: view();
+      animation-range: 25px 200px;
+    }
+  }
+}

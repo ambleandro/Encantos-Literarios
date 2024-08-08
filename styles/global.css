@@ -51,3 +51,13 @@ html {
 body {
   background-color: var(--shape-background);
 }
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 1440px) {
+  .desktop-only {
+    display: initial;
+  }
+}
