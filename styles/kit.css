@@ -1,0 +1,177 @@
+.kit {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 631px;
+  margin-inline: auto;
+  gap: .5rem;
+
+  padding-top: 6.5rem;
+
+  & .subtitle {
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: 1.25rem;
+      height: auto;
+    }
+
+    & svg path {
+      fill: var(--pink-base);
+    }
+
+    & h2 {
+      font: 700 1.5rem/1 var(--ff-base);
+    }
+  }
+
+  & .text {
+    display: flex;
+    justify-content: center;
+
+    & p {
+      font: var(--body-sm);
+    }
+  }
+
+  & .cards {
+    width: 375px;
+    height: 319px;
+    margin-top: 4rem;
+    position: relative;
+    /* border-radius: 50%; */
+
+    &:hover {
+
+      & img[src*=bookmark-yellow] {
+        transform: translate(35px, -50px);
+        rotate: 12deg;
+        transition: .5s ease;
+      }
+
+      & img[src*=bookmark-purple] {
+        transform: translate(70px, -30px);
+        rotate: 22deg;
+        transition: .5s ease;
+      }
+
+      & img[src*=pin] {
+        transform: translate(-65px, 15px);
+        rotate: -8deg;
+        transition: .5s ease;
+      }
+
+      & img[src*=arrow1] {
+        transform: translate(-65px, -20px);
+        transition: .5s ease;
+      }
+
+      & img[src*=arrow2] {
+        transform: translate(-83px, -10px);
+        transition: .5s ease;
+      }
+
+      & img[src*=arrow3] {
+        transform: translate(60px, 30px);
+        transition: .5s ease;
+      }
+
+      & p:nth-child(8) {
+        transform: translate(-105px, -65px);
+        transition: .5s ease;
+      }
+  
+      & p:nth-child(9) {
+        transform: translate(-108px, -8px);
+        transition: .5s ease;
+      }
+  
+      & p:nth-child(10) {
+        transform: translate(95px, 50px);
+        transition: .5s ease;
+      }
+    }
+
+    & img[src*=book-main] {
+      width: 156px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      top: 51px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    & img[src*=bookmark-yellow] {
+      width: 58.4px;
+      position: absolute;
+      z-index: 0;
+      top: 80px;
+      left: 200px;
+    }
+
+    & img[src*=bookmark-purple] {
+      width: 58.4px;
+      position: absolute;
+      z-index: -1;
+      top: 80px;
+      left: 200px;
+    }
+
+    & img[src*=pin] {
+      width: 74.89px;
+      position: absolute;
+      z-index: 0;
+      position: absolute;
+      z-index: 0;
+      top: 175px;
+      left: 125px;
+    }
+
+    & img[src*=arrow1] {
+      width: 58.74px;
+      position: absolute;
+      top: 65px;
+      left: 130px;
+    }
+
+    & img[src*=arrow2] {
+      width: 35.29px;
+      position: absolute;
+      top: 180px;
+      left: 130px;
+    }
+
+    & img[src*=arrow3] {
+      width: 35.29px;
+      position: absolute;
+      top: 200px;
+      left: 220px;
+    }
+
+    & p {
+      font: 400 .625rem/1 var(--ff-base);
+    }
+
+    & p:nth-child(8) {
+      position: absolute;
+      top: 90px;
+      left: 140px;
+    }
+
+    & p:nth-child(9) {
+      position: absolute;
+      top: 160px;
+      left: 140px;
+    }
+
+    & p:nth-child(10) {
+      position: absolute;
+      top: 220px;
+      left: 140px;
+    }
+  }
+}
