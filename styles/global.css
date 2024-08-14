@@ -46,10 +46,12 @@
 html {
   font: var(--body-md);
   color: var(--text-body);
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--shape-background);
+  overflow-x: hidden;
 }
 
 .desktop-only {

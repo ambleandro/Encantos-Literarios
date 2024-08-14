@@ -1,0 +1,540 @@
+section.pricing {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 712px;
+  margin-inline: auto;
+  overflow: hidden;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-top: 6.5rem;
+    align-items: center;
+
+    & h2 {
+      font: 700 1.5rem/1.2 var(--ff-base);
+    }
+  }
+
+  & .cards {
+    padding-inline: 3.25rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+  }
+
+  & .card-1 {
+    margin-top: 3rem;
+    width: 275px;
+    padding: 1.5rem;
+    border: solid 1px var(--shape-hover);
+    border-radius: 1.5rem;
+    background: var(--shape-base);
+
+    & div:nth-child(1) {
+      & .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--blue-light);
+        font-weight: 700;
+      }
+
+      & .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-inline: auto;
+
+        & h2 {
+          display: flex;
+          align-items: baseline;
+          font: var(--title-md);
+
+          & span {
+            font: var(--title-xs);
+          }
+        }
+
+        & p {
+          margin-top: .5rem;
+          font: var(--text-md);
+          color: var(--text-label);
+        }
+      }
+    }
+
+    & div:nth-child(2) {
+      margin-top: 5.188rem;
+      margin-inline: auto;
+
+      & svg {
+        width: 14.06px;
+        height: 14.06px;
+      }
+
+      & svg path {
+        fill: var(--blue-base);
+      }
+
+      & div:nth-child(1) {
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(2) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(3) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+    }
+
+    & div:nth-child(3) {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      & button {
+        width: 100%;
+        padding-block: .75rem;
+        background: var(--blue-dark);
+        border-radius: .5rem;
+        border: none;
+        color: var(--text-title);
+        font: var(--button);
+      }
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+  }
+
+  & .card-2 {
+    margin-top: 3rem;
+    width: 275px;
+    padding: 1.5rem;
+    border: solid 1px var(--shape-hover);
+    border-radius: 1.5rem;
+    background: var(--shape-base);
+
+    & div:nth-child(1) {
+      & .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--pink-light);
+        font-weight: 700;
+
+        & .tag {
+          text-transform: uppercase;
+          background: var(--shape-stroke);
+          padding: .5625rem 1.25rem;
+          border-radius: 1.5rem;
+          color: var(--text-body);
+          font: 400 ;
+        }
+      }
+
+      & .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-inline: auto;
+
+        & h2 {
+          display: flex;
+          align-items: baseline;
+          font: var(--title-md);
+
+          & span {
+            font: var(--title-xs);
+          }
+        }
+
+        & p {
+          margin-top: .5rem;
+          font: var(--text-md);
+          color: var(--text-label);
+        }
+      }
+    }
+
+    & div:nth-child(2) {
+      margin-top: 2.25rem;
+      margin-inline: auto;
+
+      & svg {
+        width: 14.06px;
+        height: 14.06px;
+      }
+
+      & svg path {
+        fill: var(--pink-base);
+      }
+
+      & div:nth-child(1) {
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(2) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(3) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      } 
+
+      & div:nth-child(4) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+    }
+
+    & div:nth-child(3) {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      & button {
+        width: 100%;
+        padding-block: .75rem;
+        background: var(--pink-dark);
+        border-radius: .5rem;
+        border: none;
+        color: var(--text-title);
+        font: var(--button);
+      }
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+  }
+
+  & .card-3 {
+    margin-top: 3rem;
+    width: 275px;
+    padding: 1.5rem;
+    border: solid 1px var(--shape-hover);
+    border-radius: 1.5rem;
+    background: var(--shape-base);
+
+    & div:nth-child(1) {
+      & .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--blue-light);
+        font-weight: 700;
+      }
+
+      & .price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-inline: auto;
+
+        & h2 {
+          display: flex;
+          align-items: baseline;
+          font: var(--title-md);
+
+          & span {
+            font: var(--title-xs);
+          }
+        }
+
+        & p {
+          margin-top: .5rem;
+          font: var(--text-md);
+          color: var(--text-label);
+        }
+      }
+    }
+
+    & div:nth-child(2) {
+      margin-top: 1.7rem;
+      margin-inline: auto;
+
+      & svg {
+        width: 14.06px;
+        height: 14.06px;
+      }
+
+      & svg path {
+        fill: var(--blue-base);
+      }
+
+      & div:nth-child(1) {
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(2) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(3) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      } 
+
+      & div:nth-child(4) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+
+      & div:nth-child(5) {
+        margin-top: .75rem;
+        display: flex;
+        gap: .5rem;
+
+        font: var(--body-xs);
+        color: var(--text-label);
+      }
+    }
+
+    & div:nth-child(3) {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      & button {
+        width: 100%;
+        padding-block: .75rem;
+        background: var(--blue-dark);
+        border-radius: .5rem;
+        border: none;
+        color: var(--text-title);
+        font: var(--button);
+      }
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+  }
+}
+
+@media (width >= 90em) {
+  section.pricing {
+    width: 90rem;
+    height: 77.125rem;
+    margin-inline: auto;
+    position: relative;
+
+    & header {
+      padding-top: 12.125rem;
+    }
+    
+    & .cards {
+      width: 100%;
+      height: 77.125rem;
+      overflow: hidden;
+
+      & .card-1 {
+        position: absolute;
+        top: 25.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        transition: 800ms ease;
+      }
+
+      & .card-2 {
+        position: absolute;
+        top: 25.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        transition: 800ms ease;
+      }
+
+      & .card-3 {
+        position: absolute;
+        top: 25.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        transition: 800ms ease;
+      }
+
+      & .stars {
+        & svg:nth-child(1) {
+          position: absolute;
+          top: 27rem;
+          left: 35rem;
+          transition: 800ms ease;
+  
+          width: 1.625rem;
+  
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+  
+        & svg:nth-child(2) {
+          position: absolute;
+          top: 29rem;
+          left: 34.5rem;
+          transition: 800ms ease;
+  
+          width: .816rem;
+  
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+  
+        & svg:nth-child(3) {
+          position: absolute;
+          top: 52rem;
+          left: 54.5rem;
+          transition: 800ms ease;
+  
+          width: 1.45rem;
+  
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+  
+        & svg:nth-child(4) {
+          position: absolute;
+          top: 53.25rem;
+          left: 53rem;
+          transition: 800ms ease;
+  
+          width: .7rem;
+  
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+  
+        & svg:nth-child(5) {
+          position: absolute;
+          top: 25.32rem;
+          left: 38.5rem;
+          z-index: 1;
+          transition: 800ms ease;
+  
+          & path {
+            fill: var(--pink-base);
+          }
+        }
+      }
+
+      & .card-1:hover {
+        transform: translateY(-5px);
+        background: var(--shape-hover);
+        z-index: 1;
+      }
+
+      & .card-2:hover {
+        transform: translateY(-5px);
+        background: var(--shape-hover);
+        z-index: 1;
+      }
+
+      & .card-3:hover {
+        transform: translateY(-5px);
+        background: var(--shape-hover);
+        z-index: 1;
+      }
+    }
+
+
+    & .cards:hover {
+
+      & .card-1 {
+        transform: translate(-418px, -15px);
+        rotate: -8deg;
+      }
+
+      & .card-3 {
+        transform: translate(142px, 20px);
+        rotate: 8deg;
+      }
+
+      & .stars {
+        & svg:nth-child(1) {
+          transform: translate(-318px, 22px);
+        rotate: -8deg;
+        }
+
+        & svg:nth-child(2) {
+          transform: translate(-318px, 22px);
+        rotate: -8deg;
+        }
+
+        & svg:nth-child(3) {
+          transform: translate(260px, 25px);
+          rotate: 8deg;
+        }
+
+        & svg:nth-child(4) {
+          transform: translate(260px, 25px);
+          rotate: 8deg;
+        }
+      }
+    }
+
+  }
+}
