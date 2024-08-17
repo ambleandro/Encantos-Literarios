@@ -328,3 +328,26 @@ footer {
     }
 }
 
+@media (width >= 90em) {
+  footer {
+    width: 90rem;
+    display: flex;
+    align-items: center;
+    gap: 34rem;
+    padding-inline: 10rem;
+
+    &::before {
+      background-size: 90rem 100%;
+    }
+
+    & .separator {
+      width: 264px;
+    }
+  
+    & .social-links {
+      width: 264px;
+    }
+
+  }
+}
+
