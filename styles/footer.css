@@ -1,0 +1,330 @@
+footer {
+  position: relative;
+  width: 375px;
+  margin-inline: auto;
+  padding-top: 6.125rem;
+  padding-bottom: 2.375rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/book-trace-background.png);
+    background-repeat: no-repeat;
+    background-size: 375px 100%;
+    background-position: center;
+    z-index: -1;
+  }
+
+  & .logo {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 1.5rem;
+  }
+
+  & .separator {
+    width: 311px;
+    margin-inline: auto;
+    border-bottom: 1px solid var(--shape-stroke);
+    margin-bottom: .75rem;
+  }
+
+  & .social-links {
+    position: relative;
+    display: flex;
+    margin-inline: auto;
+    width: 311px;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      transition: 200ms;
+
+      & path {
+        fill: var(--blue-light);
+      }
+      }
+    }
+
+    & .instagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    & .twitter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    & .facebook {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    & .discord {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    & .whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    & .mail {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+    & .whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 40px;
+      height: 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0;
+        background-color: var(--shape-stroke);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 200ms;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        & svg {
+          & path {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  & .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-inline: auto;
+    width: 311px;
+
+    & .links-col-1 {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+
+      & p {
+        margin-bottom: .5rem;
+        font: var(--title-xs);
+      }
+    }
+
+    & .links-col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+
+      & p {
+        margin-bottom: .5rem;
+        font: var(--title-xs);
+      }
+    }
+}
+

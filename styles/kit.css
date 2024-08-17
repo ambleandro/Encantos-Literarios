@@ -193,8 +193,8 @@
 @media (width >= 90em) {
   & .kit {
     width: 90rem;
-    height: 57.5rem;
-    padding-block: 17.375rem;
+    height: 90.125rem;
+    padding-top: 17.375rem;
 
     & .subtitle {
       display: flex;

@@ -47,6 +47,16 @@ html {
   font: var(--body-md);
   color: var(--text-body);
   overflow-x: hidden;
+
+  & a {
+    text-decoration: none;
+    color: var(--blue-light);
+    font: var(--link);
+
+    &:hover {
+      color: var(--text-body);
+    }
+  }
 }
 
 body {

@@ -10,7 +10,6 @@ section.pricing {
     display: flex;
     flex-direction: column;
     margin-inline: auto;
-    margin-top: 6.5rem;
     align-items: center;
 
     & h2 {
@@ -23,7 +22,8 @@ section.pricing {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   & .card-1 {
@@ -33,6 +33,7 @@ section.pricing {
     border: solid 1px var(--shape-hover);
     border-radius: 1.5rem;
     background: var(--shape-base);
+    transition: 500ms ease;
 
     & div:nth-child(1) {
       & .plan {
@@ -125,7 +126,9 @@ section.pricing {
     }
 
     &:hover {
-      background-color: var(--shape-hover);
+      transform: translateY(-8px);
+      background: var(--shape-hover);
+      z-index: 1;
     }
   }
 
@@ -136,6 +139,7 @@ section.pricing {
     border: solid 1px var(--shape-hover);
     border-radius: 1.5rem;
     background: var(--shape-base);
+    transition: 500ms ease;
 
     & div:nth-child(1) {
       & .plan {
@@ -246,7 +250,9 @@ section.pricing {
     }
 
     &:hover {
-      background-color: var(--shape-hover);
+      transform: translateY(-5px);
+      background: var(--shape-hover);
+      z-index: 1;
     }
   }
 
@@ -257,6 +263,7 @@ section.pricing {
     border: solid 1px var(--shape-hover);
     border-radius: 1.5rem;
     background: var(--shape-base);
+    transition: 500ms ease;
 
     & div:nth-child(1) {
       & .plan {
@@ -367,7 +374,9 @@ section.pricing {
     }
 
     &:hover {
-      background-color: var(--shape-hover);
+      transform: translateY(-5px);
+      background: var(--shape-hover);
+      z-index: 1;
     }
   }
 }
@@ -390,15 +399,8 @@ section.pricing {
 
       & .card-1 {
         position: absolute;
-        top: 25.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        transition: 800ms ease;
-      }
-
-      & .card-2 {
-        position: absolute;
+        width: 288px;
+        padding: 2rem;
         top: 25.5rem;
         left: 50%;
         transform: translateX(-50%);
@@ -406,20 +408,33 @@ section.pricing {
         transition: 800ms ease;
       }
 
-      & .card-3 {
+      & .card-2 {
         position: absolute;
+        width: 288px;
+        padding: 2rem;
         top: 25.5rem;
         left: 50%;
         transform: translateX(-50%);
-        z-index: -1;
+        z-index: 1;
+        transition: 800ms ease;
+      }
+
+      & .card-3 {
+        position: absolute;
+        width: 288px;
+        padding: 2rem;
+        top: 25.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
         transition: 800ms ease;
       }
 
       & .stars {
         & svg:nth-child(1) {
           position: absolute;
-          top: 27rem;
-          left: 35rem;
+          top: 26.5rem;
+          left: 34.5rem;
           transition: 800ms ease;
   
           width: 1.625rem;
@@ -431,8 +446,8 @@ section.pricing {
   
         & svg:nth-child(2) {
           position: absolute;
-          top: 29rem;
-          left: 34.5rem;
+          top: 28.5rem;
+          left: 34rem;
           transition: 800ms ease;
   
           width: .816rem;
@@ -444,8 +459,8 @@ section.pricing {
   
         & svg:nth-child(3) {
           position: absolute;
-          top: 52rem;
-          left: 54.5rem;
+          top: 52.5rem;
+          left: 55rem;
           transition: 800ms ease;
   
           width: 1.45rem;
@@ -457,7 +472,7 @@ section.pricing {
   
         & svg:nth-child(4) {
           position: absolute;
-          top: 53.25rem;
+          top: 53.5rem;
           left: 53rem;
           transition: 800ms ease;
   
@@ -470,7 +485,7 @@ section.pricing {
   
         & svg:nth-child(5) {
           position: absolute;
-          top: 25.32rem;
+          top: 25.29rem;
           left: 38.5rem;
           z-index: 1;
           transition: 800ms ease;
@@ -483,19 +498,16 @@ section.pricing {
 
       & .card-1:hover {
         transform: translateY(-5px);
-        background: var(--shape-hover);
-        z-index: 1;
+        z-index: 2;
       }
 
       & .card-2:hover {
         transform: translateY(-5px);
-        background: var(--shape-hover);
         z-index: 1;
       }
 
       & .card-3:hover {
         transform: translateY(-5px);
-        background: var(--shape-hover);
         z-index: 1;
       }
     }
@@ -504,33 +516,33 @@ section.pricing {
     & .cards:hover {
 
       & .card-1 {
-        transform: translate(-418px, -15px);
+        transform: translate(-438px, -5px);
         rotate: -8deg;
       }
 
       & .card-3 {
-        transform: translate(142px, 20px);
+        transform: translate(152px, 30px);
         rotate: 8deg;
       }
 
       & .stars {
         & svg:nth-child(1) {
-          transform: translate(-318px, 22px);
+          transform: translate(-330px, 35px);
         rotate: -8deg;
         }
 
         & svg:nth-child(2) {
-          transform: translate(-318px, 22px);
+          transform: translate(-325px, 38px);
         rotate: -8deg;
         }
 
         & svg:nth-child(3) {
-          transform: translate(260px, 25px);
+          transform: translate(265px, 33px);
           rotate: 8deg;
         }
 
         & svg:nth-child(4) {
-          transform: translate(260px, 25px);
+          transform: translate(265px, 30px);
           rotate: 8deg;
         }
       }
