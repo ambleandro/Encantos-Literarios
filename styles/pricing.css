@@ -404,8 +404,8 @@ section.pricing {
         top: 25.5rem;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 0;
         transition: 800ms ease;
+        z-index: 0;
       }
 
       & .card-2 {
@@ -415,8 +415,8 @@ section.pricing {
         top: 25.5rem;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
         transition: 800ms ease;
+        z-index: 2;
       }
 
       & .card-3 {
@@ -426,8 +426,8 @@ section.pricing {
         top: 25.5rem;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 0;
         transition: 800ms ease;
+        z-index: 0;
       }
 
       & .stars {
@@ -487,7 +487,7 @@ section.pricing {
           position: absolute;
           top: 25.29rem;
           left: 38.5rem;
-          z-index: 1;
+          z-index: 0;
           transition: 800ms ease;
   
           & path {
@@ -495,25 +495,110 @@ section.pricing {
           }
         }
       }
-
-      & .card-1:hover {
-        transform: translateY(-5px);
-        z-index: 2;
-      }
-
-      & .card-2:hover {
-        transform: translateY(-5px);
-        z-index: 1;
-      }
-
-      & .card-3:hover {
-        transform: translateY(-5px);
-        z-index: 1;
-      }
     }
 
+     .card-1:hover {
+      /* transform: translateY(-5px); */
+      z-index: 2;
+      scale: 1.02;
 
-    & .cards:hover {
+      & button {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+      }
+    
+      & button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--blue-mid);
+        clip-path: circle(0%);
+        z-index: 0;
+        transition: 600ms;
+        }
+    
+        & button:hover::after {
+          clip-path: circle(100%);
+        }
+    
+        & .button-text {
+          position: relative;
+          z-index: 2;
+        }
+    }
+
+     .card-2:hover {
+      /* transform: translateY(-5px); */
+      z-index: 1;
+      scale: 1.02;
+
+      & button {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+      }
+    
+      & button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--pink-base);
+        clip-path: circle(0%);
+        z-index: 0;
+        transition: 600ms;
+        }
+    
+        & button:hover::after {
+          clip-path: circle(100%);
+        }
+    
+        & .button-text {
+          position: relative;
+          z-index: 2;
+        }
+    }
+
+     .card-3:hover {
+      /* transform: translateY(-5px); */
+      z-index: 2;
+      scale: 1.02;
+
+      & button {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+      }
+    
+      & button::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--blue-mid);
+        clip-path: circle(0%);
+        z-index: 0;
+        transition: 600ms;
+        }
+    
+        & button:hover::after {
+          clip-path: circle(100%);
+        }
+    
+        & .button-text {
+          position: relative;
+          z-index: 2;
+        }
+    }
+     .cards:hover {
 
       & .card-1 {
         transform: translate(-438px, -5px);
@@ -528,12 +613,12 @@ section.pricing {
       & .stars {
         & svg:nth-child(1) {
           transform: translate(-330px, 35px);
-        rotate: -8deg;
+          rotate: -8deg;
         }
 
         & svg:nth-child(2) {
           transform: translate(-325px, 38px);
-        rotate: -8deg;
+          rotate: -8deg;
         }
 
         & svg:nth-child(3) {
